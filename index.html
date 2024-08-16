@@ -1,11 +1,118 @@
+html_code = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MileStone Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .milestone-item {
+            margin: 20px 0;
+            padding: 10px;
+        }
+        .milestone1 {
+            background-color: #f0f8ff;
+            color: #00008b;
+        }
+        .milestone2 {
+            background-color: #faebd7;
+            color: #8b0000;
+        }
+        .milestone3 {
+            background-color: #7fffd4;
+            color: #006400;
+        }
+        .milestone4 {
+            background-color: #ffe4c4;
+            color: #8b4513;
+        }
+        .milestone5 {
+            background-color: #d8bfd8;
+            color: #4b0082;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 4px solid #000;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #eeeeee;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Milestones of Macbook Evolution</h1>
+    <ul>
+        <li class="milestone-item milestone1">
+            <h2>Macbook (2006)</h2>
+            <a href="https://example.com/macbook2006">
+                <img src="https://th.bing.com/th/id/OIP.NKovkeOCyNNpHPP4FVtjigHaG_?w=189&h=180&c=7&r=0&o=5&pid=1.7" alt="Macbook 2006">
+            </a>
+            <p>© Source for Macbook 2006</p>
+        </li>
+        <li class="milestone-item milestone2">
+            <h2>Macbook (2007)</h2>
+            <a href="https://example.com/macbook2007">
+                <img src="https://th.bing.com/th/id/OIP.6f-pqlM9HaZZfpgWsBgbbAHaFj?w=243&h=182&c=7&r=0&o=5&pid=1.7" alt="Macbook 2007">
+            </a>
+            <p>© Source for Macbook 2007</p>
+        </li>
+        <li class="milestone-item milestone3">
+            <h2>Macbook Air (2008)</h2>
+            <a href="https://example.com/macbookair2008">
+                <img src="https://th.bing.com/th/id/OIP.A9sMJouxM9qVrZ3OGOTUrgHaEo?w=254&h=180&c=7&r=0&o=5&pid=1.7" alt="Macbook Air 2008">
+            </a>
+            <p>© Source for Macbook Air 2008</p>
+        </li>
+        <li class="milestone-item milestone4">
+            <h2>Macbook Pro (2009)</h2>
+            <a href="https://example.com/macbookpro2009">
+                <img src="https://th.bing.com/th/id/OIP.jyl4AfCAY8tmBcnuKwN_8QHaHa?w=194&h=194&c=7&r=0&o=5&pid=1.7" alt="Macbook Pro 2009">
+            </a>
+            <p>© Source for Macbook Pro 2009</p>
+        </li>
+        <li class="milestone-item milestone5">
+            <h2>Macbook Air (2010)</h2>
+            <a href="https://example.com/macbookair2010">
+                <img src="https://th.bing.com/th/id/OIP.wIrIUlexCQDwevwIbBkyWAHaFj?w=201&h=180&c=7&r=0&o=5&pid=1.7" alt="Macbook Air 2010">
+            </a>
+            <p>© Source for Macbook Air 2010</p>
+        </li>
+    </ul>
+
+    <table>
+        <thead>
+            <tr>
+                <th>2006</th>
+                <th>2007</th>
+                <th>2008</th>
+                <th>2009</th>
+                <th>2010</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Macbook 2006</td>
+                <td>Macbook 2007</td>
+                <td>Macbook Air 2008</td>
+                <td>Macbook Pro 2009</td>
+                <td>Macbook Air 2010</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
+"""
+
+with open("milestone_website.html", "w") as file:
+    file.write(html_code)
