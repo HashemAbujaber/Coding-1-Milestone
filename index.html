@@ -1,118 +1,125 @@
-html_code = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MileStone Website</title>
+    <title>Evolution of iPhones</title>
     <style>
+        
         body {
-            font-family: Arial, sans-serif;
+            background-color: rgb(160, 166, 219);
         }
-        .milestone-item {
-            margin: 20px 0;
-            padding: 10px;
+
+        
+        h1 {
+            color: darkblue; 
+            font-size: 24px;
+            margin: 0;
+        } 
+
+        
+        .first-phone {
+            background-color: rgb(28, 136, 172);
+            color: darkblue;
         }
-        .milestone1 {
-            background-color: #f0f8ff;
-            color: #00008b;
+
+        .motorola {
+            background-color: rgb(88, 134, 196);
+            color: blue;
         }
-        .milestone2 {
-            background-color: #faebd7;
-            color: #8b0000;
+
+        .nokia {
+            background-color: rgb(163, 25, 182);
+            color: rgb(18, 61, 124);
         }
-        .milestone3 {
-            background-color: #7fffd4;
-            color: #006400;
+
+        .sharp {
+            background-color: lightcoral;
+            color: maroon;
         }
-        .milestone4 {
-            background-color: #ffe4c4;
-            color: #8b4513;
+
+        .iphone {
+            background-color: lightyellow;
+            color: rgb(150, 87, 9);
         }
-        .milestone5 {
-            background-color: #d8bfd8;
-            color: #4b0082;
-        }
-        table {
+
+        
+        #milestones-table {
+            border: 2px solid black;
             width: 100%;
-            border-collapse: collapse;
+            text-align: left;
             margin-top: 20px;
         }
-        table, th, td {
-            border: 4px solid #000;
-        }
-        th, td {
+
+      
+        li {
+            list-style-type: none;
             padding: 10px;
-            text-align: center;
-        }
-        th {
-            background-color: #eeeeee;
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
-    <h1>Milestones of Macbook Evolution</h1>
+    <header>
+    <h1>MileStone Website</h1>
+    </header>
     <ul>
-        <li class="milestone-item milestone1">
-            <h2>Macbook (2006)</h2>
-            <a href="https://example.com/macbook2006">
-                <img src="https://th.bing.com/th/id/OIP.NKovkeOCyNNpHPP4FVtjigHaG_?w=189&h=180&c=7&r=0&o=5&pid=1.7" alt="Macbook 2006">
+        <li class="first-phone">
+            <h1>1973: First Mobile Phone</h1>
+            <a href="https://thedayintech.wordpress.com/2022/04/03/thick-as-a-brick/">
+                <img src="https://thedayintech.wordpress.com/wp-content/uploads/2013/04/ff_prototypes6_f.jpg" width="315px" height="400px" alt="">
+                <p><strong>Source: Sean Macaulay & Bob Green, thedayintech.com</strong></p>
             </a>
-            <p>© Source for Macbook 2006</p>
         </li>
-        <li class="milestone-item milestone2">
-            <h2>Macbook (2007)</h2>
-            <a href="https://example.com/macbook2007">
-                <img src="https://th.bing.com/th/id/OIP.6f-pqlM9HaZZfpgWsBgbbAHaFj?w=243&h=182&c=7&r=0&o=5&pid=1.7" alt="Macbook 2007">
+        <li class="motorola">
+            <h1>1983: Motorola DynaTac 8000X</h1>
+            <a href="https://content.time.com/time/specials/packages/article/0,28804,2023689_2023708_2023656,00.html">
+                <img src="https://content.time.com/time/photoessays/2010/100_gadgets/communication/motorola_dynatac.jpg" width="315px" height="400px" alt="">
+                <p><strong>Source: Peter Ha, content.time.com</strong></p>
             </a>
-            <p>© Source for Macbook 2007</p>
         </li>
-        <li class="milestone-item milestone3">
-            <h2>Macbook Air (2008)</h2>
-            <a href="https://example.com/macbookair2008">
-                <img src="https://th.bing.com/th/id/OIP.A9sMJouxM9qVrZ3OGOTUrgHaEo?w=254&h=180&c=7&r=0&o=5&pid=1.7" alt="Macbook Air 2008">
+        <li class="nokia">
+            <h1>1992: Nokia 1011</h1>
+            <a href="https://www.tomshardware.com/picturestory/694-history-of-mobile-phones.html">
+                <img src="https://cdn.mos.cms.futurecdn.net/yTHJKhFaNeFnLECPXXZcqK-320-80.jpg" width="315px" height="400px" alt="">
+                <p><strong>Source: Michael Justin Allen Sexton, tomshardware.com</strong></p>
             </a>
-            <p>© Source for Macbook Air 2008</p>
         </li>
-        <li class="milestone-item milestone4">
-            <h2>Macbook Pro (2009)</h2>
-            <a href="https://example.com/macbookpro2009">
-                <img src="https://th.bing.com/th/id/OIP.jyl4AfCAY8tmBcnuKwN_8QHaHa?w=194&h=194&c=7&r=0&o=5&pid=1.7" alt="Macbook Pro 2009">
+        <li class="sharp">
+            <h1>2000: Sharp J-SH04</h1>
+            <a href="https://www.cnet.com/pictures/phones-that-changed-the-world/5/">
+                <img src="https://www.cnet.com/a/img/resize/dfb74a94179bc65eea53a0da56d3d841631553a6/hub/2014/05/14/5778620c-f281-4017-b0e6-738b2ad130be/sharp-j-sh04-highlander.jpg?auto=webp&width=1200" width="315px" height="400px" alt="">
+                <p><strong>Source: Kent German, cnet.com</strong></p>
             </a>
-            <p>© Source for Macbook Pro 2009</p>
-        </li>
-        <li class="milestone-item milestone5">
-            <h2>Macbook Air (2010)</h2>
-            <a href="https://example.com/macbookair2010">
-                <img src="https://th.bing.com/th/id/OIP.wIrIUlexCQDwevwIbBkyWAHaFj?w=201&h=180&c=7&r=0&o=5&pid=1.7" alt="Macbook Air 2010">
+        </li> 
+        <li class="iphone">
+            <h1>2007: Apple iPhone</h1>
+            <a href="https://eshop.macsales.com/blog/83115-the-iphone-turns-15-why-it-changed-the-world/">
+                <img src="https://eshop.macsales.com/blog/wp-content/uploads/2022/06/Apple-iPhone-1st-gen-scaled.jpeg" width="315px" height="400px" alt="">
+                <p><strong>Source: OWC Wayne G, cnet.com</strong></p> 
             </a>
-            <p>© Source for Macbook Air 2010</p>
         </li>
     </ul>
 
-    <table>
-        <thead>
-            <tr>
-                <th>2006</th>
-                <th>2007</th>
-                <th>2008</th>
-                <th>2009</th>
-                <th>2010</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Macbook 2006</td>
-                <td>Macbook 2007</td>
-                <td>Macbook Air 2008</td>
-                <td>Macbook Pro 2009</td>
-                <td>Macbook Air 2010</td>
-            </tr>
-        </tbody>
-    </table>
-</body>
-</html>
-"""
-
-with open("milestone_website.html", "w") as file:
-    file.write(html_code)
+  
+    <table id="milestones-table" cellpadding="10">
+        <tr>
+            <th>Phone</th>
+            <th>Milestone</th>
+            <th>Date</th>
+        </tr>
+        <tr>
+            <td>The First Mobile Phone</td>
+            <td>Make and Receive Calls</td>
+            <td>1973</td>
+        </tr>
+        <tr>
+            <td>Motorola DynaTac 8000X</td>
+            <td>First Portable Cellular Phone</td>
+            <td>1983</td>
+        </tr>
+        <tr>
+            <td>Nokia 1011</td>
+            <td>Text Messaging</td>
+            <td>1992</td>
+        </tr>
